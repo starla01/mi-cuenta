@@ -1,0 +1,104 @@
+$white: #ffffff
+$whiteTwo: #F7F7F7
+$tomato: #e1251b
+$kellyGreen: #03a322
+$brownishGrey: #666666
+$black: #333333
+$greyish: #a5a5a5
+
+#container
+  display: flex
+  justify-content: space-between
+  width: 100%
+  font-family: "Source Sans Pro", sans-serif
+
+.containerCancelation
+  width: 70%
+  padding: 20px 40px
+  &.tablet
+    width: 100%
+  &.phone
+    width: 100%
+.Cancelation
+  display: flex
+  margin-top: 55px
+  &.tablet
+    flex-direction: column
+  &.phone
+    flex-direction: column
+.userData
+  width: 40%
+  &.tablet
+    width: 100%
+  &.phone
+    width: 100%
+.imageCancelation
+  width: 60%
+  &.tablet
+    width: 100%
+  &.phone
+    width: 100%
+    position: relative
+.name
+  font-size: 30px
+  font-weight: bold
+  line-height: 34px
+  color: $brownishGrey
+.description
+  font-size: 20px
+  line-height: 24px
+  color: $brownishGrey
+  font-weight: normal
+  span
+    color: $tomato
+.cancelId
+  font-size: 48px
+  font-weight: bold
+  color: $tomato
+  margin: 10px 0px 10px 0px
+  &.phone
+    font-size: 36px
+.line
+  position: absolute
+  &.desktop
+    width: 40%
+  &.tablet
+    -webkit-transform: scaleX(-1)
+    -moz-transform: scaleX(-1)
+  &.phone
+    width: 70%
+    -webkit-transform: scaleX(-1)
+    -moz-transform: scaleX(-1)
+.plane
+  top: 140px
+  left: -10px
+  &.desktop
+    top: 124px
+  &.tablet
+    -webkit-transform: scaleX(-1)
+    -moz-transform: scaleX(-1)
+    top: 133px
+    left: 450px
+  &.phone
+    -webkit-transform: scaleX(-1)
+    -moz-transform: scaleX(-1)
+    top: 104px
+    left: 203px
+@media (max-width: 389px)
+  .lineInitial
+    width: 220px
+  .label
+    &.phone
+      left: 164px
+  .labelInitial
+    &.phone
+      right: 164px
+@media (max-width: 320px)
+  .lineInitial
+    width: 200px
+  .label
+    &.phone
+      left: 138px
+  .labelInitial
+    &.phone
+      right: 146px

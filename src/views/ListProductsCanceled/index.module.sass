@@ -1,0 +1,213 @@
+$white: #ffffff
+$whiteTwo: #F7F7F7
+$tomato: #e1251b
+$kellyGreen: #03a322
+$brownishGrey: #666666
+$black: #333333
+$greyish: #a5a5a5
+.container
+  display: flex
+  justify-content: space-between
+  width: 100%
+.containerList
+  width: 70%
+  padding: 20px 40px
+  box-sizing: border-box
+  &.largedesktop
+    padding: 20px 34px
+  &.desktop
+    width: 70%
+    padding: 20px 21px
+  &.tablet
+    width: 100%
+    padding: 0px
+    padding: 20px 15px
+  &.phone
+    width: 100%
+    padding: 0px
+    padding: 20px 15px
+.containerItems
+  background-color: $white
+  border-radius: 5px
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.06)
+  border: 1px solid #e8e8e8
+  display: flex
+  flex-flow: column nowrap
+  margin-top: 27px
+  &.tablet
+    margin-top: 75px
+  &.phone
+    margin-top: 30px
+  .title
+    font-size: 14px
+    font-weight: 600
+    font-style: normal
+    font-stretch: normal
+    line-height: normal
+    letter-spacing: normal
+    color: $brownishGrey
+    margin: 0 11px 0 17px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 10px
+    p
+      width: 50%
+    &.phone
+      flex-direction: column
+      padding: 0px
+      margin: 0
+      align-items: flex-end
+      p
+        width: 96%
+        border-bottom: 1px solid #e8e8e8
+        padding: 0px 16px 10px 10px
+.select
+  padding-right: 7px
+.selectAll
+  width: 20%
+  display: flex
+  align-items: center
+  padding-left: 19px
+  &.phone
+    padding: 0px 17px 10px 0px
+    justify-content: flex-end
+    width: 49%
+.item
+  display: flex
+  border-top: solid 1px #e8e8e8
+  min-height: 75px
+.productDetail
+  width: 100%
+  display: flex
+  align-items: center
+  padding: 10px 50px 10px 26px
+  box-sizing: border-box
+  &.phone
+    padding: 10px
+    width: 96%
+    box-sizing: border-box
+.description
+  width: 100%
+  margin: 0 0px 0px 26px
+  display: flex
+  align-items: center
+  &.phone
+    width: 79%
+    margin: 0 0px 0px 9px
+.productName
+  width: 40%
+  a
+    font-size: 14px
+    font-weight: bold
+    color: $brownishGrey
+    &.phone
+      width: 50%
+      white-space: nowrap
+      overflow: hidden
+      text-overflow: ellipsis
+.textDetail
+  width: 60%
+  display: flex
+  font-size: 14px
+  font-weight: normal
+  color: #666666
+  margin: 8px 0
+  justify-content: flex-end
+  align-items: center
+  &.phone
+    flex-direction: column
+    width: 56%
+.quantity
+  width: 20%
+  text-align: center
+  &.phone
+    width: 100%
+    text-align: right
+.subtotal
+  width: 35%
+  display: flex
+  &.phone
+    width: 100%
+    text-align: right
+    flex-direction: column
+.checkBox
+  width: 45%
+  text-align: right
+  &.phone
+    width: 100%
+.selling
+  font-weight: bold
+  padding-left: 10px
+.wrapperButtons
+  display: flex
+  justify-content: space-between
+  margin-top: 30px
+  align-items: center
+.disagreeButton
+  width: 161px
+  height: 36px
+  border-radius: 5px
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.35)
+  background-color: $white
+  text-align: center
+  line-height: 36px
+  font-weight: 600
+  color: $kellyGreen
+  font-size: 14px
+  &.phone
+    width: 135px
+.agreeButton
+  width: 161px
+  height: 36px
+  border-radius: 5px
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.35)
+  background-color: $whiteTwo
+  text-align: center
+  line-height: 36px
+  font-weight: 600
+  color: $black
+  cursor: pointer
+  font-size: 14px
+  &.phone
+    width: 135px
+.agreeButtonDisable
+  width: 161px
+  height: 36px
+  border-radius: 5px
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.15)
+  background-color: #fbfbfb
+  text-align: center
+  line-height: 36px
+  font-weight: 600
+  color: $black
+  pointer-events: none
+  cursor: not-allowed
+  cursor: pointer
+  font-size: 14px
+  &.phone
+    width: 135px
+.cssinput
+  -webkit-appearance: checkbox!important
+  -moz-appearance: checkbox!important
+  appearance: checkbox!important
+.priceSelectproducts
+  font-size: 14px
+  font-weight: bold
+  color: #676767
+  span
+    font-weight: normal
+  &.phone
+    margin-top: 30px
+    text-align: right
+.cancelItems
+  font-size: 14px
+  font-weight: bold
+  color: #666666
+  margin-top: 42px
+@media (max-width: 348px)
+  .title
+    &.phone
+      p
+        padding: 0px 3px 10px 10px!important
+        width: 90%

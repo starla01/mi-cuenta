@@ -1,0 +1,80 @@
+$shadow: rgba(0,0,0,0.15686) 0px 3px 10px, rgba(0,0,0,0.22745) 0px 3px 10px
+$transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms
+$borderColor: #e5e6e9 #dfe0e4 #d0d1d5
+$chatSize: 250px
+$mainColor: #ff5c60
+$secondaryColor: #407bff
+$textColor: #1d2129
+$linkColor: #00b2b5
+$warningColor: #ff7812
+$iconColor: #becce2
+$priceColor: #4043ff
+$starColor: #ffa900
+$greyish: #a5a5a5
+$tomato: #e1251b
+.TextFieldRoot
+ width: 100%
+ position: relative
+ padding-top: 18px
+ &.open
+   label
+     transform: scale(0.77) translate(0px, -13px)
+     display: none
+ &.focus
+   label
+     color: $mainColor
+     font-style: normal
+   input
+     border-bottom: 2px solid $mainColor
+     &::-webkit-input-placeholder
+       color: rgba(0, 0, 0, 0.3)
+ &.error
+   i
+     display: block
+     color: $tomato
+   label
+     color: $tomato
+   input
+     border-bottom: 2px solid $tomato
+ label
+   position: absolute
+   width: 100%
+   top: 20px
+   left: 10px
+   font-size: 17px
+   line-height: 22px
+   transform-origin: left top 0px
+   transition: $transition
+   color: rgba(0, 0, 0, 0.3)
+   cursor: text
+   font-size: 14px
+   font-weight: normal
+   font-style: italic
+   will-change: transform
+ i
+    color: rgba(0, 0, 0, 0.3)
+    position: absolute
+    right: 4px
+    top: 22px
+    font-size: 20px
+    display: none
+ textarea
+   width: 100%
+   outline: none
+   border: 1px solid rgba(0, 0, 0, 0.1)
+   margin: 0
+   padding: 0
+   font-size: 16px
+   min-height: 85px
+   box-sizing: border-box
+   color: rgba(0, 0, 0, 0.87)
+   transition: $transition
+   border-radius: 5px
+   border: 1px solid $greyish
+   background-color: transparent
+   padding: 10px
+   resize: none
+.error
+ color: $tomato
+ font-size: 12px
+ margin-top: 5px

@@ -1,0 +1,425 @@
+$white: #ffffff
+$whiteTwo: #F7F7F7
+$tomato: #e1251b
+$kellyGreen: #03a322
+$brownishGrey: #666666
+$black: #333333
+$greyish: #a5a5a5
+
+.container
+  display: flex
+  justify-content: space-between
+  width: 100%
+  .containerOrder
+    width: 100%
+    padding: 20px 40px
+    &.tablet
+      padding: 20px 15px
+    &.phone
+      padding: 20px 15px
+    .title
+      color: $tomato
+      display: flex
+      font-size: 14px
+      align-items: center
+      font-weight: 600
+      text-decoration: underline
+      cursor: pointer
+.iconFill
+  fill: $tomato
+  margin-right: 3px
+.title
+  font-size: 14px
+  font-weight: 600
+  color: $brownishGrey
+  margin-bottom: 23px
+
+.qty
+  font-size: 14px
+  font-weight: normal
+  color: $brownishGrey
+
+.lastPrice
+  font-size: 14px
+  font-weight: normal
+  color: $brownishGrey
+  text-decoration: line-through
+
+.subtotal
+  font-size: 14px
+  font-weight: normal
+  color: $brownishGrey
+  span
+    font-weight: bold
+
+.wrapperQty
+  display: flex
+  margin: 8px 0px 13px 0px
+
+.descriptionsOrder
+  display: flex
+  align-items: center
+  padding-bottom: 4px
+.descriptionsOrderStatus
+  display: flex
+  align-items: center
+  padding-bottom: 4px
+  svg
+    fill: transparent
+    stroke: black
+    margin-right: 4px
+  &.status
+    display: flex
+    justify-content: space-between
+    width: 80%
+    padding: 0px 0px 0px 40px
+    align-items: center
+    box-sizing: border-box
+    &.orderStatus
+      display: flex
+    &.phone
+      width: 100%
+      padding: 0px
+      align-items: end
+      margin: 5px
+  &.phone
+    display: flex
+    flex-direction: column
+
+.descriptionDetail
+  display: flex
+  justify-content: space-between
+  background-color: $white
+  border-radius: 5px
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.06)
+  border: 1px solid #e8e8e8
+  margin: 16px 0px 27px 0px
+  padding: 17px
+  flex-flow: row wrap
+  &.tablet
+    flex-direction: column
+  &.phone
+    flex-direction: column
+
+.numberOrder
+  font-size: 15px
+  line-height: 21px
+  font-weight: bold
+  color: $tomato
+  width: 28%
+  &.phone
+    width: 100%
+    font-size: 25px
+    font-weight: bold
+    margin: 19px 0
+
+.underline
+  text-decoration: underline
+
+.textStatus
+  font-size: 14px
+  line-height: 19px
+  font-weight: normal
+  color: $brownishGrey
+  span
+    color: $black
+    font-weight: 600
+
+.textChangeOrder
+  font-size: 14px
+  line-height: 24px
+  font-weight: 600
+  color: $brownishGrey
+  display: flex
+  margin-left: 27px
+  svg
+    fill: yellow
+    stroke: black
+.statusText
+  color: #666666
+  font-size: 16px
+  font-weight: bold
+  width: 28%
+.statusTextOrder
+  color: #666666
+  font-size: 16px
+  font-weight: bold
+  text-transform: uppercase
+  width: 28%
+  &.phone
+    width: auto
+    margin-right: 10px
+
+.labelStatus
+  font-size: 14px
+  font-weight: 600
+  color: #03a322
+  border-radius: 3px
+  text-align: center
+  line-height: 19px
+  text-overflow: ellipsis
+  white-space: nowrap
+  background-color: white
+  position: relative
+  justify-content: space-between
+  &.phone
+    margin: 0px
+
+.headerDetail
+  display: flex
+  width: 30%
+  svg
+    fill: #666666
+  &.tablet
+    width: 100%
+  &.phone
+    margin-top: 10px
+    width: 100%
+
+.headerText
+  margin-top: 5px
+
+.headerDescription
+  font-size: 14px
+  font-weight: bold
+  color: $brownishGrey
+  margin: 8px 0px 16px 0
+  &.phone
+    margin: 0px 0px 5px 0
+
+.headerResum
+  font-size: 13px
+  font-weight: normal!important
+  color: $brownishGrey
+  line-height: 20px
+
+.headerResum
+  p
+    font-size: 13px
+    font-weight: normal!important
+    color: $brownishGrey
+    line-height: 20px
+    margin: 0px
+
+.headerAddress
+  width: 200px
+
+//Status Bars
+.statusWraper
+  width: 100%
+  height: 200px
+  display: flex
+  flex-flow: row nowrap
+  align-items: center
+  border-top: solid 1px #F7F7F7
+  margin-top: 15px
+  .statusContainer
+    display: flex
+    flex-flow: row nowrap
+    justify-content: space-between
+    align-items: center
+    width: 100%
+    &.phone
+      flex-direction: column
+      align-items: flex-start
+      height: auto
+  .statusBlock
+    width: 10px
+    height: 10px
+    margin: 12px
+    background-color: $greyish
+    border-radius: 8px
+    justify-content: center
+    display: flex
+    position: relative
+
+  .statusBlock:first-of-type
+    margin-left: 50px
+    &.phone
+      margin-left: 12px
+  .statusBlock:last-of-type
+    margin-right: 50px
+    &.phone
+      margin-right: 0px
+  .statusText
+    width: 100%
+    min-width: 95px
+    padding: 8px
+    text-align: center
+    font-size: 14px
+    margin-top: 1rem
+    line-height: 19px
+    &.phone
+      min-width: 113px
+      position: absolute
+      padding: 0px
+      left: 22px
+      text-align: left
+      top: -22px
+  .centralBar
+    border: 4px solid $greyish
+    width: 20%
+    border-width: .125rem
+    &.phone
+      transform: rotate(90deg)
+      width: 2%
+      border-width: 0.5px
+      position: relative
+      left: 8px
+.statusWraper
+  .past
+    background-color: $kellyGreen
+    &.centralBar
+      border-color: $kellyGreen
+    .statusText
+      color: $kellyGreen
+      font-weight: 600
+      &.phone
+        min-width: 152px
+
+.statusBlock.active
+  border-radius: 10px
+  width: 11px
+  display: flex
+  background-color: $kellyGreen
+  .statusText
+    background-color: #03a322
+    position: absolute
+    display: block
+    border-radius: 3px
+    top: -80px
+    margin: 0
+    padding: 10px
+    color: white
+    font-weight: 600
+    &.phone
+      top: -11px
+      left: 28px
+      padding: 5px
+      &::before
+        transform: rotate(90deg)
+        top: 34%
+        left: -4%
+    &::before
+      content: ""
+      position: absolute
+      top: 100%
+      left: 50%
+      margin-left: -5px
+      border-width: 5px
+      border-style: solid
+      border-color: #03a322 transparent transparent transparent
+
+.totalOrder
+  margin-top: 30px
+  text-align: right
+  font-size: 14px
+  color: $black
+  span
+    font-weight: 600
+    padding-right: 50px
+  &.phone
+    margin-top: 16px
+    margin-bottom: 16px
+    span
+      padding-right: 0px
+
+.links
+  font-weight: 600
+  color: $brownishGrey
+  text-decoration: underline
+  font-size: 14px
+  line-height: 19px
+  margin: 14px 19px 0px 0px
+  cursor: pointer
+.position
+  display: flex
+  justify-content: flex-end
+  padding-right: 50px
+  &.phone
+    padding-right: 0px
+.buttonOrderDetail
+  width: 166px
+  height: 36px
+  border-radius: 5px
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2)
+  background-color: $whiteTwo
+  font-size: 14px
+  line-height: 19px
+  font-weight: 600
+  text-align: center
+  line-height: 36px
+  color: $black
+  cursor: pointer
+  padding: 0 13px
+  &.tablet
+    width: 100%
+    margin-top: 10px
+  &.phone
+    width: 100%
+    margin-top: 10px
+
+.containerDescriptions
+  display: flex
+  width: 100%
+.containerDescriptionStatus
+  display: flex
+  width: 72%
+  justify-content: space-between
+.wrapperbuttons
+  display: flex
+  justify-content: space-between
+  margin-top: 20px
+
+.productsContainerGeneral
+  background-color: $white
+  border-radius: 5px
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.06)
+  border: 1px solid #e8e8e8
+  display: flex
+  flex-flow: column nowrap
+  margin-top: 27px
+  .title
+    font-size: 14px
+    font-weight: 600
+    font-style: normal
+    font-stretch: normal
+    line-height: normal
+    letter-spacing: normal
+    color: $brownishGrey
+    margin: 17px
+    width: 50%
+.cancelItems
+  font-size: 14px
+  font-weight: bold
+  color: $brownishGrey
+  margin: 22px 0px 0px 111px
+  &.phone
+    margin: 22px 0px 0px 0px
+
+.reference
+  width: 100%
+  line-height: 40px
+  font-size: 14px
+  font-weight: 600
+  border: 1px solid #03a322
+  padding: 4px 8px
+  border-radius: 4px
+  background: #f7f7f7
+
+@media (max-width: 568px)
+  .centralBar
+    left: 8px!important
+    width: 4%!important
+
+@media (max-width: 320px)
+  .centralBar
+    left: 11px!important
+@media (max-width: 1139px)
+  .containerDescriptions
+    flex-direction: column
+  .containerDescriptionStatus
+    flex-direction: column-reverse
+    margin-bottom: 6px
+  .descriptionsOrderStatus
+    justify-content: flex-start

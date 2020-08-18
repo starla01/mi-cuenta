@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="309px" height="142px" viewBox="0 0 309 142" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55 (78076) - https://sketchapp.com -->
+    <title>AIRPLANE</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="45.4104002%" x2="2.11787711%" y2="48.8082636%" id="linearGradient-1">
+            <stop stop-color="#F24C3A" offset="0%"></stop>
+            <stop stop-color="#E1251B" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Self-service-1.4" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="AIRPLANE" transform="translate(1.000000, 1.000000)">
+            <g id="PLANE" transform="translate(220.000000, 103.000000)">
+                <polyline id="Fill-98" fill="#89150F" points="17 29.2293769 25.0024546 38 86 12 17 29.2293769"></polyline>
+                <polygon id="Fill-99" fill="#E1251B" points="13.2486742 9.26509076 17.3558813 18.3448002 8.14201268 19.928896 0 38 88 11.0783275 19.3233114 0"></polygon>
+                <polyline id="Fill-100" fill="#89150F" points="17.1360454 18 13 9 61 11.2334385 17.1360454 18"></polyline>
+            </g>
+            <path d="M0,0 C7.3088421,11.6919956 7.3088421,83.8604633 78.0385221,64.7587549 C148.768202,45.6570464 134.169489,89.5138572 104.482638,103.987092 C74.7957867,118.460326 50.0165276,95.8371356 92.5219663,81.1392236 C135.027405,66.4413116 208.369199,147.339457 298,115.518235" id="LINEPLANE" stroke="url(#linearGradient-1)" stroke-dasharray="5"></path>
+        </g>
+    </g>
+</svg>

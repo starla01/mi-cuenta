@@ -1,0 +1,72 @@
+$shadow: rgba(0,0,0,0.15686) 0px 3px 10px, rgba(0,0,0,0.22745) 0px 3px 10px
+$transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms
+$borderColor: #e5e6e9 #dfe0e4 #d0d1d5
+$chatSize: 250px
+$mainColor: #ff5c60
+$secondaryColor: #407bff
+$textColor: #1d2129
+$linkColor: #00b2b5
+$warningColor: #ff7812
+$iconColor: #becce2
+$priceColor: #4043ff
+$starColor: #ffa900
+
+.TextFieldDateRoot
+  width: 100%
+  width: 310px
+  height: 36px
+  position: relative
+  border: 1px solid #A5A5AB
+  border-radius: 6px
+  display: flex
+  justify-content: space-between
+  &.open
+    label
+      transform: scale(0.77) translate(0px, -26px)
+  &.focus
+    label
+      color: $mainColor
+    input
+      border-bottom: 2px solid $mainColor
+      &::-webkit-input-placeholder
+        color: rgba(0, 0, 0, 0.3)
+  &.error
+    label
+      color: red
+    input
+      border-bottom: 2px solid red
+  &.phone
+    width: 290px
+  &.desktop
+    width: 100%
+  &.tablet
+    width: 100%
+  label
+    position: relative
+    top: 25px
+    left: -14px
+    cursor: text
+    font-style: italic
+    font-size: 18px
+    font-weight: 600
+    color: #666666
+    width: 250px
+  input
+    position: relative
+    width: 90%
+    border: none
+    outline: none
+    border-bottom: 1px solid rgba(243, 156, 18, 1)
+    margin: 0
+    padding: 0
+    top: 8px
+    color: rgba(0, 0, 0, 0.87)
+    transition: $transition
+    background-color: transparent
+    font-style: italic
+    font-size: 14px
+    color: #666666
+.error
+  color: red
+  font-size: 12px
+  margin-top: 5px

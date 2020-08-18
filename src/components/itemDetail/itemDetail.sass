@@ -1,0 +1,250 @@
+$white: #ffffff
+$whiteTwo: #e8e8e8
+$tomato: #e1251b
+$kellyGreen: #03a322
+$brownishGrey: #666666
+$black: #333333
+$greyish: #a5a5a5
+
+.productsContainerIndividual
+  display: flex
+  border-top: solid 1px $whiteTwo
+  min-height: 75px
+  &:last-of-type
+    border-bottom: none
+  &.phone
+    flex-direction: column
+    padding: 10px 0px 10px 0px
+    box-sizing: border-box
+
+.productDetail
+  width: 100%
+  display: flex
+  align-items: center
+  padding: 10px 50px 10px 26px
+  &.phone
+    width: 96%
+    padding: 0px 0px 0px 20px
+.image
+  text-align: center
+.description
+  width: 100%
+  margin: 0 0px 0px 26px
+  display: flex
+  align-items: center
+  &.phone
+    margin: 0 11px
+    padding: 4px
+
+.nameProduct
+  width: 50%
+  &.phone
+    a
+      font-size: 13px
+      line-height: 17px
+  a
+    font-size: 14px
+    font-weight: bold
+    color: $brownishGrey
+
+.deliveryRanges
+  color: #03a322
+  font-size: 0.9rem
+  margin: 0.5rem 0 0
+
+.quantity
+  width: 20%
+  text-align: center
+  &.phone
+    width: 100%
+    text-align: right
+
+.textDetail, .packagesQuantity
+  width: 50%
+  display: flex
+  font-size: 14px
+  font-weight: normal
+  color: $brownishGrey
+  margin: 8px 0
+  justify-content: flex-end
+  &.phone
+    flex-direction: column
+.subtotalText
+  width: 80%
+  text-align: right
+  &.phone
+    width: 100%
+.textBlack
+  font-weight: bold
+.date
+  font-size: 14px
+  color: $kellyGreen
+  &.phone
+    padding-left: 70px
+.number
+  font-weight: 600
+  color: $brownishGrey
+  span
+    font-size: 16px
+    font-weight: 600
+
+.trackingProduct
+  width: 40%
+  &.phone
+    width: 100%
+.buttonTrack
+  margin: 20px 0
+  border-radius: 5px
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2)
+  background-color: #ffffff
+  font-size: 14px
+  font-weight: bold
+  text-align: center
+  color: $kellyGreen
+  display: inline-block
+  text-decoration: none
+  width: 210px
+  display: block
+  line-height: 36px
+  height: 36px
+  &.phone
+    width: 100%
+
+.packageDetail
+  width: 100%
+  border-bottom: solid 1px $whiteTwo
+  padding-bottom: 5px
+  margin-bottom: 5px
+  &:last-of-type
+    border-bottom: none
+    padding-bottom: 5px
+    margin-bottom: 5px
+
+.delivered
+  text-align: left
+  color: $kellyGreen
+  font-size: 14px
+  width: 90%
+  display: flex
+  padding-top: 60px
+  &.phone
+    width: 100%
+    padding-top: 30px
+
+.circle
+  width: 8px
+  height: 8px
+  background-color: $kellyGreen
+  border-radius: 5px
+  top: 2px
+  span
+    top: -23px
+    position: relative
+
+.circleCancel
+  width: 8px
+  height: 8px
+  background-color: $brownishGrey
+  border-radius: 5px
+  top: 2px
+  span
+    top: -23px
+    position: relative
+
+.circle2
+  width: 15px
+  height: 15px
+  background-color: #03a322
+  border-radius: 7px
+  top: -3px
+  left: 2%
+  position: relative
+  span
+    top: -23px
+    position: relative
+    left: -21px
+  &.phone
+    span
+      left: -51px
+.circle2Canceled
+  width: 15px
+  height: 15px
+  background-color: $brownishGrey
+  border-radius: 7px
+  top: -3px
+  left: 2%
+  position: relative
+  span
+    top: -23px
+    position: absolute
+    width: 100px
+    left: -21px
+  &.phone
+    span
+      left: -51px
+
+.line
+  height: 2px
+  background-color: #03a322
+  position: relative
+  margin-top: 4px
+  margin-left: 17px
+  width: 70%
+  border-radius: 10px 0 0 10px
+  &.phone
+    width: 91%
+.lineCanceled
+  height: 2px
+  background-color: $brownishGrey
+  position: relative
+  margin-top: 4px
+  margin-left: 17px
+  width: 70%
+  border-radius: 10px 0 0 10px
+  &.phone
+    width: 91%
+.descriptionCanceled
+  width: 100%
+  margin: 0 0px 0px 26px
+  display: flex
+  align-items: center
+  &.phone
+    flex-direction: column
+.nameProductCanceled
+  width: 50%
+  &.phone
+    width: 100%
+    a
+      font-size: 13px
+      line-height: 17px
+  a
+    font-size: 14px
+    font-weight: bold
+    color: $brownishGrey
+.textDetailCanceled
+  width: 50%
+  display: flex
+  font-size: 14px
+  font-weight: normal
+  color: $brownishGrey
+  margin: 8px 0
+  justify-content: flex-end
+  &.phone
+    width: 100%
+    flex-direction: column
+.quantityCanceled
+  width: 20%
+  text-align: center
+  &.phone
+    width: 100%
+    text-align: left
+.subtotalTextCanceled
+  width: 80%
+  text-align: right
+  &.phone
+    width: 100%
+    text-align: left
+.sendGray
+  color: $brownishGrey
+.send
+  color: $kellyGreen

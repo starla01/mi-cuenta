@@ -1,0 +1,223 @@
+$white: #ffffff
+$whiteTwo: #F7F7F7
+$tomato: #e1251b
+$kellyGreen: #03a322
+$brownishGrey: #666666
+$black: #333333
+$greyish: #a5a5a5
+$send: #03a322
+$whiteLight: #e8e8e8
+
+.containerOrders
+  flex-direction: column
+  background-color: $white
+  border-radius: 5px
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2)
+  &.tablet
+    margin: 25px 0px 25px
+    border-radius: 0px
+  &.phone
+    background-color: $whiteLight
+    margin: 25px 0px 25px
+    border-radius: 0px
+    padding-bottom: 8px
+
+.containerTop
+  display: flex
+  height: 55px
+  margin-top: 35px
+
+.orderNumber
+  max-width: 204px
+  width: 32%
+  background-color: $whiteTwo
+  padding: 15px
+  font-size: 15px
+  font-weight: bold
+  color: $tomato
+  text-align: left
+  line-height: 25px
+  border-bottom: 1px solid white
+  border-right: 1px solid $whiteTwo
+  display: flex
+  border-radius: 5px 0px 0px 0px
+  box-sizing: border-box
+
+.wrapperOrder
+  display: flex
+  justify-content: space-between
+  border-bottom: 1px solid $whiteTwo
+  width: 74%
+  padding: 13px 13px 13px 49px
+  align-items: center
+  box-sizing: border-box
+  a
+    text-decoration: none
+  &.largedesktop
+    width: 78%
+  &.tablet
+    width: 80%
+
+.wrapperOrderCancel
+  display: flex
+  justify-content: space-between
+  border-bottom: 1px solid $whiteTwo
+  border-left: 1px solid white
+  background-color: $whiteTwo
+  width: 74%
+  padding: 13px 13px 13px 49px
+  align-items: center
+  box-sizing: border-box
+  a
+    text-decoration: none
+  &.largedesktop
+    width: 78%
+  &.tablet
+    width: 80%
+
+.labelChangeOrder
+  font-size: 14px
+  line-height: 24px
+  font-weight: 600
+  text-align: center
+  color: $brownishGrey
+  display: flex
+  svg
+    fill: yellow
+    stroke: black
+
+.buttonOrderDetail
+  width: 164px
+  height: 36px
+  border-radius: 5px
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2)
+  background-color: #ffffff
+  font-size: 14px
+  line-height: 19px
+  font-weight: 600
+  text-align: center
+  line-height: 36px
+  margin: 0 auto
+  color: $brownishGrey
+
+.containerBottom
+  display: flex
+  width: 100%
+
+.summary
+  width: 31%
+  max-width: 204px
+  background-color: $whiteTwo
+  padding: 16px
+  border-radius: 0 0 0 5px
+  box-sizing: border-box
+
+.description
+  margin-bottom: 16px
+  display: flex
+  width: 172px
+
+.wrapperSvg
+  width: 25px
+  svg
+    fill: $brownishGrey
+
+.information
+  font-size: 12px
+  line-height: 17px
+  color: $brownishGrey
+  width: 147px
+
+.thick
+  font-size: 14px
+  line-height: 19px
+  font-weight: 600
+  color: $black
+  span
+    text-decoration: underline
+
+.products
+  width: 77%
+  box-sizing: border-box
+  &.phone
+    width: 95%
+    margin: 0 auto
+
+.send
+  div
+    color: $send
+    font-size: 14px
+    font-weight: 600
+    font-style: normal
+
+.cacel
+  div
+    background: red
+
+.labelStatus
+  font-size: 14px
+  font-weight: 600
+  font-style: normal
+  color: $kellyGreen
+
+.labelStatusCancel
+  font-size: 14px
+  font-weight: 600
+  font-style: normal
+  color: $tomato
+
+.wrapperStatusMb
+  display: flex
+  height: 130px
+  padding: 0 10px
+
+.order
+  width: 50%
+  padding-right: 10px
+  border-right: 1px solid white
+  &.phone
+    a
+      text-decoration: none
+
+.totals
+  width: 50%
+  padding: 10px 0px 0px 10px
+
+.number
+  color: $tomato
+  font-size: 16px
+  font-weight: bold
+  margin: 10px 0 12px 0px
+  font-size: 13px
+
+.wrapperButonMb
+  margin-top: 16px
+  a
+    text-decoration: none
+
+.buttonOrderDetailMb
+  width: 94%
+  height: 36px
+  border-radius: 5px
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2)
+  background-color: #ffffff
+  font-size: 14px
+  font-weight: 600
+  text-align: center
+  line-height: 36px
+  margin: 0 auto
+  color: $brownishGrey
+  white-space: nowrap
+  overflow: hidden
+  text-overflow: ellipsis
+  padding: 3px
+
+.descriptionMb
+  font-size: 12px
+  margin-bottom: 8px
+  span
+    font-weight: bold
+
+.decoration
+  text-decoration: underline
+

@@ -1,0 +1,182 @@
+$tomato: #e1251b
+$grayL: #e8e8e8
+$whiteTwo: #F7F7F7
+$brownishGrey: #666666
+$bannerOrderDelay: #fff7bf
+$vermillion: #fe1d00
+
+#container
+  display: flex
+  justify-content: space-between
+  width: 100%
+  &.tablet
+    flex-direction: column
+  &.phone
+    flex-direction: column
+
+.containerList
+  width: 74%
+  flex: 1 1
+  &.largedesktop
+    padding: 20px 34px
+  &.desktop
+    width: 70%
+    padding: 20px 21px
+  &.tablet
+    width: 100%
+    padding: 0px
+  &.phone
+    width: 100%
+    padding: 0px
+
+.orders
+  padding: 20px 35px
+  flex: 1 1
+  font-family: "Source Sans Pro", sans-serif
+
+.title
+  color: $tomato
+  display: flex
+  font-size: 14px
+  margin-bottom: 10px
+  span
+    padding-top: 8px
+
+.iconFill
+  fill: $tomato
+  margin-right: 3px
+
+.empty
+  color: $tomato
+  margin: 0 auto
+  text-align: center
+  font-size: 28px
+
+.iconFillEmpty
+  fill: $grayL
+
+.options
+  text-align: center
+  height: 40px
+  display: flex
+
+.profileButton
+  background: $whiteTwo
+  width: 50%
+  color: $brownishGrey
+  display: flex
+  justify-content: center
+  align-items: center
+  font-size: 14px
+  font-weight: normal
+
+.profileButtonActive
+  background: $whiteTwo
+  width: 50%
+  color: $tomato
+  display: flex
+  justify-content: center
+  align-items: center
+  font-size: 14px
+  font-weight: bold
+
+.iconActive
+  fill: $tomato
+  margin-right: 4px
+
+.ordersButtonActive
+  background: white
+  width: 50%
+  color: $tomato
+  display: flex
+  justify-content: center
+  align-items: center
+  font-size: 14px
+  font-weight: bold
+
+.ordersButton
+  background: white
+  width: 50%
+  color: $brownishGrey
+  display: flex
+  justify-content: center
+  align-items: center
+  font-size: 14px
+  font-weight: normal
+
+.icon
+  stroke: $brownishGrey
+  margin-right: 4px
+  fill: transparent
+
+.iconShip
+  fill: $brownishGrey
+
+.ordersButton
+  width: 50%
+
+.controls
+  padding: 0
+  box-sizing: border-box
+  border-radius: 4px
+  display: flex
+
+.control.active
+  border-left: 1px solid $grayL
+  border-top: 1px solid $grayL
+  border-right: 1px solid $grayL
+  font-weight: 700
+  border-bottom: 0px solid $grayL
+
+.control
+  display: 1
+  font-size: 13px
+  text-align: center
+  padding: 2px
+  box-sizing: border-box
+  color: #333333
+  font-weight: 400
+  cursor: pointer
+  padding: 8px 0
+  border-radius: 4px 4px 0 0
+  border-bottom: 1px solid $grayL
+  &:hover
+    font-weight: 700
+    color: #333333
+
+.showOrders
+  font-weight: 300
+  font-size: 14px
+  color: #333333
+  &.phone
+    padding: 10px
+
+.bolders
+  font-weight: 600
+
+.bannerContainer
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: row
+  background-color: $bannerOrderDelay
+  width: 100%
+  overflow: hidden
+
+.bannerTextContainer
+  margin: 0.5rem
+  font-style: italic
+
+.bannerContainerDesktop
+  margin-top: 2rem
+
+.bannerTextColor
+  color: $vermillion
+
+.bannerTextMobile
+  font-size: 0.75rem
+  line-height: 1rem
+
+.bannerTextDesktop
+  font-size: 1rem
+  line-height: 1rem

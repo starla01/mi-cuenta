@@ -1,0 +1,156 @@
+$white: #ffffff
+$whiteTwo: #F7F7F7
+$tomato: #e1251b
+$kellyGreen: #03a322
+$brownishGrey: #666666
+$black: #333333
+$greyish: #a5a5a5
+.titleBreadcrumb
+  font-size: 25px
+  font-weight: bold
+  font-style: normal
+  color: $brownishGrey
+  text-transform: uppercase
+  margin: 39px 0px 40px 0px
+  &.phone
+     font-size: 18px
+.breadcrumb
+  display: flex
+  align-items: center
+  margin-bottom: 47px
+  justify-content: center
+  &.phone
+    margin-bottom: 64px
+.line
+  height: 3px
+  background-color: #e8e8e8
+  position: relative
+  margin-top: 4px
+  width: 397px
+  display: flex
+  justify-content: space-between
+  &.desktop
+    width: 350px
+  &.phone
+     width: 320px
+.lineActive
+  height: 3px
+  background-color: $kellyGreen
+  position: relative
+  margin-top: 4px
+  width: 397px
+  justify-content: space-between
+  display: flex
+  &.desktop
+    width: 350px
+  &.phone
+     width: 320px
+.dot
+  width: 10px
+  height: 10px
+  background-color: #e8e8e8
+  border-radius: 20px
+  margin: 4px 4px 0px 4px
+.dotActive
+  width: 10px
+  height: 10px
+  background-color: $kellyGreen
+  border-radius: 20px
+  margin-top: 4px
+  margin: 4px 4px 0px 4px
+.label
+  bottom: 8px
+  position: relative
+  top: 13px
+  right: 34px
+  color: #a5a5a5
+  font-size: 14px
+  font-weight: 600
+.labelActive
+  bottom: 8px
+  position: relative
+  top: 13px
+  right: 34px
+  color: $kellyGreen
+  font-size: 14px
+  font-weight: 600
+  &.phone
+    text-align: center
+.labelMedium
+  bottom: 8px
+  position: relative
+  top: 13px
+  right: 63px
+  color: #a5a5a5
+  font-size: 14px
+  font-weight: 600
+.labelMediumActive
+  bottom: 8px
+  position: relative
+  top: 13px
+  right: 63px
+  color: $kellyGreen
+  font-size: 14px
+  font-weight: 600
+  &.phone
+    right: 44px
+    text-align: center
+.labelEnd
+  bottom: 8px
+  position: relative
+  top: 13px
+  right: 34px
+  color: #a5a5a5
+  font-size: 14px
+  font-weight: 600
+  right: -68px
+  &.desktop
+    right: -30px
+  &.tablet
+    right: -30px
+    text-align: center
+  &.phone
+    right: -12px
+    text-align: center
+.backorder
+  display:  flex
+  color: $tomato
+  cursor: pointer
+  font-size: 14px
+  margin-bottom: 18px
+  a
+    text-decoration: underline
+    color: $tomato
+.title
+  display: flex
+  align-items: center
+  font-weight: 600
+  span
+    text-decoration: underline
+.iconFill
+  fill: $tomato
+  margin-right: 3px
+.labelEndActive
+  bottom: 8px
+  position: relative
+  top: 13px
+  color: $kellyGreen
+  font-size: 14px
+  font-weight: 600
+  right: -68px
+  &.desktop
+    right: -30px
+  &.tablet
+    right: -30px
+    text-align: center
+  &.phone
+    right: -30px
+    text-align: center
+@media (max-width: 480px)
+  .lineActive
+    width: 120px!important
+  .line
+    width: 120px!important
+  .labelEnd
+    &.phone
+      right: 8px

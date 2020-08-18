@@ -1,0 +1,127 @@
+$white: #ffffff
+$whiteTwo: #F7F7F7
+$tomato: #e1251b
+$kellyGreen: #03a322
+$brownishGrey: #666666
+$black: #333333
+$greyish: #a5a5a5
+
+.wrapperProducts
+  width: 100%
+  border-bottom: 1px solid $whiteTwo
+  &:last-child
+    border-bottom: 0px
+
+.product
+  display: flex
+  justify-content: space-between
+  padding: 16px 40px 16px 34px
+  box-sizing: border-box
+  &.desktop
+    padding: 16px
+  &.phone
+    background-color: white
+    padding: 16px
+    margin-top: 20px
+
+.image
+  text-align: center
+  width: 70px
+  img
+    width: 95%
+  &.phone
+    width: 25%
+.productDescription
+  padding-bottom: 10px
+  width: 350px
+  &.desktop
+    width: 290px
+  &.phone
+    width: 75%
+    padding-left: 6px
+
+.nameProduct
+  a
+    font-size: 14px
+    line-height: 19px
+    font-weight: bold
+    color: $brownishGrey
+    text-decoration: none
+
+.pza
+  font-size: 14px
+  line-height: 19px
+  color: $brownishGrey
+  margin: 0.25rem 0
+
+.deliveryRanges
+  color: #03a322
+  font-size: 0.90rem
+  margin: 1rem 0 0
+
+.cancel
+  font-size: 14px
+  line-height: 19px
+  color: $tomato
+
+.seller
+  font-size: 12px
+  line-height: 17px
+  color: $brownishGrey
+  a
+    cursor: pointer
+    font-weight: 600
+    color: $brownishGrey
+
+.days
+  font-size: 14px
+  line-height: 19px
+  color: $brownishGrey
+
+.delivered
+  font-size: 14px
+  line-height: 19px
+  color: $kellyGreen
+  margin-bottom: 9px
+  span
+    font-weight: bold
+
+.buttonTrack
+  width: 125px
+  height: 36px
+  border-radius: 5px
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2)
+  background-color: #03a322
+  font-size: 14px
+  font-weight: 600
+  font-style: normal
+  display: block
+  color: white
+  text-align: center
+  text-decoration: none
+  line-height: 34px
+
+.lastQty
+  text-decoration: line-through
+  font-size: 14px
+  font-weight: normal
+  color: $greyish
+
+.qty
+  font-size: 14px
+  font-weight: bold
+  color: $brownishGrey
+  &.phone
+    margin: 3px
+    font-size: 13px
+
+.promise
+  color: $brownishGrey
+  font-size: 14px
+  span
+    font-weight: 600
+  &.phone
+    font-size: 12px
+
+.delivered
+  color: $kellyGreen

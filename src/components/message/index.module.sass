@@ -1,0 +1,105 @@
+#container
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  background-color: rgba(0, 0, 0, 0.4)
+  display: flex
+  align-items: center
+  justify-content: center
+  font-family: "Source Sans Pro", sans-serif
+  z-index: 4
+  border-radius: 5px
+
+#content
+  border-radius: 3px
+  background-color: white
+  width: 570px
+  display: flex
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.5)
+  padding: 15px
+  color: white
+  &.error
+    background-color: #ca1d14
+  &.warning
+    background-color: #c6810c
+  &.inactive
+    background-color: #666666
+  &.success
+    background-color: white
+    border-top: 6px solid #03a322
+    color: #676767
+    #title
+      text-align: center
+    #icon
+      background-color: #03a322
+      width: 30px
+      height: 50px
+      position: relative
+      top: -21px
+      border-radius: 4px
+      svg
+        color: white
+        fill: white
+  &.soft-error
+    background-color: white
+    border: 2px solid #e1251b
+    color: #676767
+    #icon
+      svg
+        color: #e1251b
+        fill: #e1251b
+  &.phone
+    width: 60%
+
+#icon
+  flex: 0 0 auto
+  width: 70px
+  height: 70px
+  color: rgba(0, 0, 0, 0.6)
+  fill: rgba(0, 0, 0, 0.6)
+  margin-right: 33px
+  display: flex
+  justify-content: center
+  align-items: center
+  font-size: 90px
+  svg
+    fill: rgba(255, 255, 255, 0.6)
+
+#data
+  flex: 1
+  text-align: center
+  h3
+    margin: 0px
+  &.phone
+    flex: 2
+
+#title
+  font-size: 23px
+  margin-top: 0
+  line-height: 48px
+  &.phone
+    font-size: 16px
+    line-height: 21px
+
+#text
+  font-size: 16px
+  margin-bottom: 25px
+  a
+    font-weight: bold
+    color: inherit
+
+#button
+  background-color: white
+  width: 162px
+  height: 36px
+  border-radius: 5px
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2)
+  display: flex
+  align-items: center
+  justify-content: center
+  font-size: 14px
+  font-weight: 600
+  color: #333
+  cursor: pointer

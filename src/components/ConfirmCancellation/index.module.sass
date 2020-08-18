@@ -1,0 +1,103 @@
+$black: #333333
+
+.wrapperPopUpContainer
+  width: 100%
+  height: 100%
+  background-color: rgba(0, 0, 0, 0.4)
+  position: fixed
+  top: 0
+  right: 0
+  left: 0
+  z-index: 9
+  display: flex
+  justify-content: center
+  align-items: center
+
+.containerPopup
+  width: 372px
+  height: 190px
+  max-height: calc(100% - 20px)
+  border-radius: 5px
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2)
+  margin: 0 auto
+  position: relative
+  background-color: #ffffff
+  overscroll-behavior: contain
+  &.phone
+    width: 90%
+    overflow: scroll
+    max-height: 100%
+
+.headerPop
+  background-color: #f7f7f7
+  border-radius: 5px 5px 0px 0px
+  font-family: "Source Sans Pro", sans-serif
+  font-size: 18px
+  font-weight: bold
+  padding: 10px 10px 0 15px
+  display: flex
+  align-items: center
+  color: #333333
+  justify-content: space-between
+  svg
+    stroke: snow
+    cursor: pointer
+
+.rowPopup
+  font-family: "Source Sans Pro", sans-serif
+  font-size: 14px
+  padding: 35px 19px 0 19px
+  color: #666666
+  font-weight: normal
+  font-style: normal
+  font-stretch: normal
+  line-height: normal
+  letter-spacing: normal
+  justify-content: center
+  display: flex
+  width: 100%
+  box-sizing: border-box
+  text-align: center
+  &.div
+    &:first-child
+      margin-left: 16px
+      margin-right: 16px
+  &.phone
+    flex-direction: column
+    margin-bottom: 0px
+
+
+.footerPop
+  display: flex
+  flex-flow: row nowrap
+  justify-content: center
+  align-items: center
+  margin: 25px 0 0 0
+  &.phone
+    margin: 14px 0
+
+.cancelPopButton
+  width: 121px
+  height: 36px
+  border-radius: 5px
+  background-color: #f7f7f7
+  color: #333333
+  line-height: normal
+  font-style: normal
+  font-stretch: normal
+  margin: 0 10px
+  text-align: center
+  display: flex
+  align-items: center
+  justify-content: center
+  font-size: 13px
+  font-weight: 600
+  cursor: pointer
+  box-sizing: border-box
+
+  &.active
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2)
+    background-color: #ffffff
+    color: #03a322
+  &.acept
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.35)
